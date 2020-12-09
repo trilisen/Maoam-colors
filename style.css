@@ -34,6 +34,10 @@ body {
     width: 220px;
 }
 
+.block:focus {
+    outline: none;
+}
+
 .block img{
     width: inherit;
     height: inherit;
