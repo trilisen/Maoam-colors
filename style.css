@@ -29,6 +29,11 @@ body {
     border: none;
 }
 
+.block:hover {
+    height: 110px;
+    width: 220px;
+}
+
 .block img{
     width: inherit;
     height: inherit;
