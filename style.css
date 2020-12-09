@@ -4,7 +4,32 @@ body {
     background: white;
 }
 
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+} 
+
 .block {
-    background: url(/img/maoam-bloxx-haribo.jpg);
-    
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(128, 128, 128, 0.349);
+    height: 100px;
+    width: 200px;
+    margin: 10px;
+    border: none;
+}
+
+.block img{
+    width: inherit;
+    height: inherit;
 }
