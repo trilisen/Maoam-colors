@@ -35,7 +35,5 @@ blocks.forEach(block => {
         e.target.alt = colors[index].alt;
         
         
-    })
+    });
 });
-
-console.log(blocks);
