@@ -24,7 +24,7 @@ const colors = [
 const blocks = document.querySelectorAll('.block');
 
 blocks.forEach(block => {
-    // This eventListener listens for a left-click on one of the blocks and changes the color/image of the block. It goes through an array which contains the source of the image and the alt tag. 
+    // This eventListener listens for a left-click on one of the blocks and changes the color/image of the block. It goes through an array which contains an object with the source of the image and the alt tag. 
     block.addEventListener('click', (e) => {
         e.preventDefault();
         e.target.dataset.indexNumber++;
