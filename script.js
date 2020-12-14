@@ -38,9 +38,13 @@ blocks.forEach(block => {
         e.preventDefault();
         e.onContextMenu = false;
         let randomNumber = Math.floor(Math.random()*5);
-        e.target.src = colors[randomNumber].src;
-        e.target.alt = colors[randomNumber].alt;
-    })
+        e.target.style.opacity = 0;
+        e.target.addEventListener('transitionend', (e) => {
+            e.target.style.opacity = 1;
+            e.target.src = colors[randomNumber].src;
+            e.target.alt = colors[randomNumber].alt;
+        });
+    });
 });
 
 document.addEventListener('keypress', (e) => {

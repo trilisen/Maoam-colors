@@ -41,6 +41,8 @@ body {
 .block img{
     width: inherit;
     height: inherit;
+    opacity: 1;
+    transition: opacity 2s;
 }
 
 .btn {
