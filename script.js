@@ -24,6 +24,7 @@ const colors = [
 const blocks = document.querySelectorAll('.block');
 
 blocks.forEach(block => {
+    // This eventListener listens for a left-click on one of the blocks and changes the color/image of the block. It goes through an array which contains the source of the image and the alt tag. 
     block.addEventListener('click', (e) => {
         e.preventDefault();
         e.target.dataset.indexNumber++;
@@ -34,6 +35,7 @@ blocks.forEach(block => {
         e.target.src = colors[index].src;
         e.target.alt = colors[index].alt;
     });
+    // This eventListener listens for a right-click, a.k.a the context menu. It triggers a transition where it dissapears and reappears with a random color. There is also another eventListener that listens for the transition to complete.
     block.addEventListener('contextmenu', (e) => {
         e.preventDefault();
         e.onContextMenu = false;
@@ -47,6 +49,8 @@ blocks.forEach(block => {
     });
 });
 
+
+// This eventlistener listens after the letter 'R' on the keyboard to shuffle all of the blocks to random colors.
 document.addEventListener('keypress', (e) => {
     e.preventDefault();
     if (e.charCode == 114) {
