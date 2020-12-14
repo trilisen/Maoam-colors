@@ -1,4 +1,12 @@
+@font-face {
+    font-family: "Insaniburger";
+    src: url("/fonts/Insaniburger.woff2") format("woff2"),
+         url("/fonts/Insaniburger.woff") format("woff");
+}
+
 body {
+    font-family: Insaniburger;
+    font-size: .9rem;
     margin: 0;
     padding: 0;
     background: rgb(255, 255, 54);
@@ -9,6 +17,18 @@ body {
     align-items: center;
     flex-direction: column;
 }
+
+header {
+    margin: 1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.for-mobile {
+    display: none;
+}
+
 
 .container {
     display: flex;

@@ -1,4 +1,8 @@
 @media only screen and (max-width: 600px) {
+    header {
+        position: static;
+    }
+    
     .container {
         flex-direction: column;
     }
@@ -7,3 +11,12 @@
         width: 200px;
     }
 } 
+
+@media only screen and (max-width: 1000px) {
+    .for-desktop {
+        display: none;
+    }
+    .for-mobile {
+        display: list-item;
+    }
+}
