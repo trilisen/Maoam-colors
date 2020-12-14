@@ -50,7 +50,7 @@ blocks.forEach(block => {
 });
 
 
-// This eventlistener listens after the letter 'R' on the keyboard to shuffle all of the blocks to random colors.
+// This eventlistener listens after the letter 'R' on the keyboard to shuffle all of the blocks to random colors. This does not work on mobile.
 document.addEventListener('keypress', (e) => {
     e.preventDefault();
     if (e.charCode == 114) {
