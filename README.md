@@ -1,3 +1,3 @@
 # Maoam Colors
 
-## Mess around with colors, like you are a child.
+### Mess around with colors, like you're a child.
